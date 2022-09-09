@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Othello</string>
+    <string name="reset">RESET</string>
+    <string name="p1_black_score">P1 (Black) Score:</string>
+    <string name="p2_white_score">P2 (White) Score:</string>
+    <string name="start">START</string>
+</resources>

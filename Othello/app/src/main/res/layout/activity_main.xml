@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".MainActivity"
+    android:focusable="true">
+
+    <com.example.othello.GameActivity
+        android:id="@+id/gameActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:onClick="resetBoard"
+        android:text="@string/start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.917" />
+
+    <TextView
+        android:id="@+id/p1_score_text"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/p1_black_score"
+        android:textAlignment="center"
+        android:textColor="#7CB342"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/p2_score_text"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:text="@string/p2_white_score"
+        android:textAlignment="center"
+        android:textColor="#7CB342"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/p1_score_text"
+        app:layout_constraintStart_toStartOf="@+id/p1_score_text"
+        app:layout_constraintTop_toBottomOf="@+id/p1_score_text" />
+
+    <TextView
+        android:id="@+id/inGameMessage"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="Press 'START'"
+        android:textAlignment="center"
+        android:textColor="#7CB342"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/reset_button"
+        app:layout_constraintStart_toStartOf="@+id/reset_button"
+        app:layout_constraintTop_toBottomOf="@+id/reset_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
